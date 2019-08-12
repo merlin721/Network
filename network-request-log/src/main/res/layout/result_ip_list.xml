@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/empty_text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawablePadding="10dp"
+            android:drawableTop="@drawable/erreo_empty"
+            android:gravity="center"
+            android:text="@string/base_url_empty"
+            android:textColor="@android:color/white" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="Network request BASE URL"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="10dp"
+            android:drawableStart="@drawable/face"
+            android:gravity="center_vertical"
+            android:text="长按列表项 改变BaseUrl 且程序会重启"
+            android:textColor="@color/colorAccent" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorWhite" />
+
+        <ListView
+            android:id="@+id/listview_ip"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="#dddbdb"
+            android:dividerHeight="1.0px"
+            android:layoutAnimation="@anim/layout_animation1"
+            android:listSelector="#7fffffff"
+            android:scrollbars="none" />
+    </LinearLayout>
+
+</FrameLayout>

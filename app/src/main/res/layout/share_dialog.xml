@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_white"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    >
+
+  <LinearLayout
+      android:layout_width="wrap_content"
+      android:layout_height="160dp"
+      android:gravity="center_vertical"
+      >
+    <com.merlin.time.view.TimeTextView
+        android:id="@+id/share_dialog_qq_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="95dp"
+        android:drawablePadding="@dimen/d_10"
+        android:drawableTop="@drawable/share_ic_qq"
+        android:text="@string/share_qq_friend"
+        android:textColor="@color/col_333333"
+        android:textSize="@dimen/s_14"
+        />
+    <com.merlin.time.view.TimeTextView
+        android:id="@+id/share_dialog_wechat_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawablePadding="@dimen/d_10"
+        android:drawableTop="@drawable/share_ic_wechat"
+        android:text="@string/share_wechat_friend"
+        android:textColor="@color/col_333333"
+        android:textSize="@dimen/s_14"
+        />
+  </LinearLayout>
+  <View
+      android:layout_width="match_parent"
+      android:layout_height="0.5dp"
+      android:background="#e5e5e5"
+      />
+  <com.merlin.time.view.TimeTextView
+      android:id="@+id/logout_dialog_logout_cancel_tv"
+      android:layout_width="match_parent"
+      android:layout_height="60dp"
+      android:gravity="center"
+      android:text="@string/my_center_logout_cancel"
+      android:textColor="@color/col_333333"
+      android:textSize="@dimen/s_16"
+      />
+</LinearLayout>

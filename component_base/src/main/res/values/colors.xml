@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="col_333333">#333333</color>
+    <color name="col_555555">#555555</color>
+    <color name="col_fafafa">#fafafa</color>
+    <color name="col_999999">#999999</color>
+    <color name="col_777777">#777777</color>
+    <color name="col_72dacf">#72dacf</color>
+    <color name="col_aaabb3">#AAABB3</color>
+    <color name="col_212121">#212121</color>
+    <color name="col_f3f7f7">#F3F7F7</color>
+    <color name="col_f2f2f2">#f2f2f2</color>
+    <color name="transparent">#00000000</color>
+    <color name="col_dedede">#DEDEDE</color>
+    <color name="col_2CC7C5">#2cc7c5</color>
+    <color name="col_2cc7c5">#2cc7c5</color>
+    <color name="col_d8d8d8">#d8d8d8</color>
+    <color name="title_bg">#CECECE</color>
+    <color name="ffffff">#ffffff</color>
+    <color name="color_dot_bg">#FF5870</color>
+</resources>

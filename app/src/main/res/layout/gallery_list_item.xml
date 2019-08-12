@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+  <com.merlin.time.view.TimeImageView
+      android:id="@+id/gallery_list_item_img"
+      android:layout_width="80dp"
+      android:layout_height="80dp"
+      android:scaleType="centerCrop"
+      android:layout_margin="2dp"
+      />
+  <com.merlin.time.view.TimeImageView
+      android:id="@+id/gallery_list_item_video"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:scaleType="centerCrop"
+      android:visibility="gone"
+      android:layout_alignBottom="@+id/gallery_list_item_img"
+      android:layout_marginStart="@dimen/d_8"
+      android:layout_marginBottom="@dimen/d_8"
+      android:src="@drawable/video_ic_small"
+      />
+
+
+</RelativeLayout>

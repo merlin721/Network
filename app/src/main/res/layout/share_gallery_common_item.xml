@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_72"
+    android:background="@android:color/white"
+
+
+    >
+
+  <com.merlin.time.view.TimeImageView
+      android:id="@+id/share_gal_item_img"
+      android:layout_width="48dp"
+      android:layout_height="48dp"
+      android:scaleType="centerCrop"
+      android:layout_marginStart="@dimen/d_16"
+      android:layout_marginBottom="@dimen/d_12"
+      android:layout_marginEnd="@dimen/d_10"
+      android:layout_marginTop="@dimen/d_12"
+      />
+
+  <com.merlin.time.view.TimeTextView
+      android:id="@+id/share_gal_item_title"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginEnd="@dimen/d_16"
+      android:layout_marginTop="@dimen/d_12"
+      android:layout_toEndOf="@+id/share_gal_item_img"
+      android:text="生活一场旅行"
+      android:textColor="@color/color_text_color"
+      android:textSize="17sp"
+      />
+
+  <com.merlin.time.view.TimeTextView
+      android:id="@+id/share_gal_item_desc"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/share_gal_item_title"
+      android:layout_marginEnd="@dimen/d_16"
+      android:layout_marginTop="@dimen/d_5"
+      android:layout_toEndOf="@+id/share_gal_item_img"
+      android:text="照片 1200 丨 视频 25"
+      android:textColor="@color/color_999999"
+      android:textSize="@dimen/s_12"
+      />
+
+  <View
+      android:layout_width="match_parent"
+      android:layout_height="1dp"
+      android:layout_toEndOf="@+id/share_gal_item_img"
+      android:layout_marginStart="@dimen/d_10"
+      android:layout_alignParentBottom="true"
+      android:background="@color/chuck_status_f3f4f5"/>
+</RelativeLayout>

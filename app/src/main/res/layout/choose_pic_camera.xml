@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#33000000"
+                android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/choose_pic_out_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/color_white"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/choose_pic_take_photo"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="@string/upload_pic_take_photo"
+            android:textColor="@color/color_text_color"
+            android:textSize="15sp"
+            />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/common_bg"/>
+
+        <TextView
+            android:id="@+id/choose_pic_pic_photo"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="@string/upload_pic_choose_from_pic"
+            android:textColor="@color/color_text_color"
+            android:textSize="15sp"
+            />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@color/common_bg"/>
+
+        <TextView
+            android:id="@+id/choose_pic_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="@string/cancel"
+            android:textColor="@color/color_text_color"
+            android:textSize="15sp"
+            />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/choose_pick_btn"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@null"
+        android:layout_above="@+id/choose_pic_out_ll"/>
+</RelativeLayout>

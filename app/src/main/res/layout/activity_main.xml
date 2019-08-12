@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white">
+
+    <FrameLayout
+        android:id="@+id/main_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/main_rg" />
+
+    <RadioGroup
+        android:id="@+id/main_rg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_home"
+            style="@style/mainRadioButtonStyle"
+            android:checked="true"
+            android:drawableTop="@drawable/main_bottom_bg"
+            android:text="@string/mainpage"
+            android:layout_marginTop="13dp"
+            android:layout_marginBottom="9dp"
+            android:visibility="visible" />
+
+
+        <RadioButton
+            android:id="@+id/rb_share_photo"
+            style="@style/mainRadioButtonStyle"
+            android:drawableTop="@drawable/share_gallery_bottom_bg"
+            android:layout_marginTop="13dp"
+            android:layout_marginBottom="9dp"
+            android:text="@string/share_gallery" />
+
+        <RadioButton
+            android:id="@+id/rb_my_photo"
+            style="@style/mainRadioButtonStyle"
+            android:drawableTop="@drawable/my_gallery_bottom_bg"
+            android:text="@string/my_gallery"
+            android:layout_marginTop="13dp"
+            android:layout_marginBottom="9dp"
+            android:visibility="gone" />
+
+        <RadioButton
+            android:id="@+id/rb_my_center"
+            android:layout_marginTop="13dp"
+            android:layout_marginBottom="9dp"
+            style="@style/mainRadioButtonStyle"
+            android:drawableTop="@drawable/my_bottom_bg"
+            android:text="@string/my_center" />
+    </RadioGroup>
+
+
+</RelativeLayout>

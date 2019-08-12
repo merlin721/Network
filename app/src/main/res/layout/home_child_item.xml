@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <com.merlin.time.view.TimeImageView
+        android:id="@+id/home_child_item_img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black" />
+    <cn.jzvd.JzvdStd
+        android:id="@+id/videoplayer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.merlin.time.view.TimeImageView
+            android:id="@+id/home_child_item_head"
+            android:layout_width="@dimen/d_36"
+            android:layout_height="@dimen/d_36"
+            android:layout_marginStart="@dimen/d_16"
+            android:layout_marginTop="17dp"
+            android:src="@drawable/my_img_head_default" />
+
+        <com.merlin.time.view.TimeTextView
+            android:id="@+id/home_child_item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/d_5"
+            android:layout_marginTop="@dimen/d_16"
+            android:layout_toEndOf="@+id/home_child_item_head"
+            android:text="爱笑的猫"
+            android:textColor="@color/color_text_color"
+            android:textSize="@dimen/s_14" />
+
+        <com.merlin.time.view.TimeTextView
+            android:id="@+id/home_child_item_top_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="17dp"
+            android:layout_marginEnd="@dimen/d_16"
+            android:text="2小时前"
+            android:textColor="@color/color_999999"
+            android:textSize="@dimen/s_11" />
+
+        <com.merlin.time.view.TimeTextView
+            android:id="@+id/home_child_item_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/home_child_item_name"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/d_5"
+            android:layout_marginEnd="@dimen/d_16"
+            android:layout_toEndOf="@+id/home_child_item_head"
+            android:singleLine="true"
+            android:text="拍摄于 北京·圆明园丨2019年1月1日 12:30"
+            android:textColor="@color/color_999999"
+            android:textSize="@dimen/s_12" />
+
+    </RelativeLayout>
+
+    <com.merlin.time.view.TimeTextView
+        android:id="@+id/item_like_fl"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="@dimen/d_16"
+        android:drawablePadding="@dimen/d_10"
+        android:layout_width="match_parent"
+        android:drawableLeft="@drawable/ic_home_like"
+        android:text="晒晒、"
+        android:textSize="@dimen/s_12"
+        android:textColor="@color/col_333333"
+        android:layout_height="@dimen/d_24" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/home_child_item_discuss_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/home_share_ll"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <com.merlin.time.view.TimeTextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:drawableStart="@drawable/ic_home_fenxiang"
+                android:drawablePadding="@dimen/d_5"
+                android:gravity="center"
+                android:text="分享"
+                android:textColor="@color/color_999999"
+                android:textSize="@dimen/s_11" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/home_child_item_discuss_ll"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <com.merlin.time.view.TimeTextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:drawableStart="@drawable/ic_home_discuss"
+                android:drawablePadding="@dimen/d_5"
+                android:gravity="center"
+                android:text="评论"
+                android:textColor="@color/color_999999"
+                android:textSize="@dimen/s_11" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/home_child_item_like_ll"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <com.merlin.time.view.TimeTextView
+                android:id="@+id/home_child_item_like_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:drawableStart="@drawable/ic_home_unlike"
+                android:drawablePadding="@dimen/d_5"
+                android:gravity="center"
+                android:text="点赞"
+                android:textColor="@color/color_999999"
+                android:textSize="@dimen/s_11" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

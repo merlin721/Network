@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+  <View
+      android:id="@+id/share_gal_view"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:background="#66000000"
+      android:visibility="gone"
+      />
+  <RelativeLayout
+      android:id="@+id/share_gal_title"
+      android:layout_width="match_parent"
+      android:layout_height="60dp"
+      android:background="@color/color_white"
+      >
+
+
+    <com.merlin.time.view.TimeTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="群组相册"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/s_16"
+        />
+
+  </RelativeLayout>
+  <com.scwang.smartrefresh.layout.SmartRefreshLayout
+      android:id="@+id/share_refreshLayout"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_below="@+id/share_gal_title"
+      app:srlEnableHeaderTranslationContent="true"
+      app:srlEnableScrollContentWhenRefreshed="true"
+      >
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/share_gal_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/share_gallery_top_title"
+        />
+  </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+
+  <!--<include layout="@layout/drop_down_menu"/>-->
+
+
+</RelativeLayout>

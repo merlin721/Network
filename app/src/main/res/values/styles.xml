@@ -1,0 +1,92 @@
+<resources>
+
+  <!-- Base application theme. -->
+  <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <!-- Customize your theme here. -->
+    <item name="colorPrimary">@color/colorPrimary</item>
+    <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+    <item name="colorAccent">@color/colorAccent</item>
+  </style>
+
+  <style name="Transparentsp" parent="Theme.AppCompat.Light.NoActionBar">
+    <item name="android:windowIsTranslucent">true</item>
+    <item name="android:windowBackground">@android:color/transparent</item>
+    <item name="android:windowContentOverlay">@null</item>
+    <item name="android:windowNoTitle">true</item>
+    <item name="android:windowIsFloating">true</item>
+    <item name="android:backgroundDimEnabled">false</item>
+  </style>
+
+  <style name="Transparent" parent="@style/Theme.Transparent">
+    <item name="android:windowBackground">@android:color/transparent</item>
+    <item name="android:windowAnimationStyle">@android:style/Animation.Translucent</item>
+    <item name="android:colorBackgroundCacheHint">@null</item>
+    <item name="android:windowIsTranslucent">true</item>
+    <item name="android:windowContentOverlay">@null</item>
+    <item name="windowActionBar">false</item>
+    <item name="windowActionBarOverlay">true</item>
+    <item name="windowNoTitle">true</item>
+  </style>
+
+  <style name="Theme.Transparent" parent="@style/Theme.AppCompat.Light.NoActionBar">
+    <item name="android:colorBackgroundCacheHint">@null</item>
+    <item name="android:windowAnimationStyle">@style/ActivityAnimation</item>
+    <item name="android:windowIsTranslucent">true</item>
+    <item name="android:windowContentOverlay">@null</item>
+    <item name="windowActionBar">false</item>
+    <item name="windowActionBarOverlay">true</item>
+    <item name="windowNoTitle">true</item>
+  </style>
+  <!--主页RadioButton样式  -->
+  <style name="mainRadioButtonStyle">
+    <item name="android:layout_width">0dp</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:layout_weight">1</item>
+    <item name="android:button">@null</item>
+    <item name="android:drawablePadding">5dp</item>
+    <item name="android:background">@color/transparent</item>
+    <item name="android:gravity">center</item>
+    <item name="android:textSize">10sp</item>
+    <item name="android:textColor">@color/main_rb_textcolor</item>
+  </style>
+
+  <style name="Common_Theme_Dialog" parent="Theme.Transparent">
+    <item name="android:backgroundDimEnabled">true</item>
+    <item name="android:windowNoTitle">true</item>
+    <item name="android:windowBackground">@android:color/transparent</item>
+    <item name="android:windowContentOverlay">@null</item>
+    <item name="android:windowAnimationStyle">@android:style/Animation.Activity</item>
+  </style>
+
+  <style name="popupAnimation" parent="android:Animation">
+    <item name="android:windowEnterAnimation">@anim/popup_enter</item>
+    <item name="android:windowExitAnimation">@anim/popup_exit</item>
+  </style>
+
+  <style name="Dialog_Fullscreen">
+    <item name="android:backgroundDimAmount">0.5</item>
+    <item name="android:windowIsFloating">true</item>
+    <!--是否浮现在activity之上-->
+    <item name="android:windowIsTranslucent">true</item>
+    <!--半透明-->
+    <item name="android:windowNoTitle">true</item>
+    <!--无标题-->
+    <item name="android:windowBackground">@color/transparent</item>
+    <!--背景透明-->
+    <item name="android:backgroundDimEnabled">true</item>
+    <item name="android:windowFullscreen">true</item>
+    <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+  </style>
+
+
+  <style name="style_myprogressbar" parent="@android:style/Widget.ProgressBar.Horizontal">
+    <item name="android:maxHeight">50dip</item>
+    <item name="android:minHeight">10dip</item>
+    <item name="android:indeterminateOnly">false</item>
+    <item name="android:indeterminateDrawable">@android:drawable/progress_indeterminate_horizontal
+    </item>
+    <item name="android:progressDrawable">@drawable/shape_pb_bg</item>
+
+  </style>
+
+</resources>

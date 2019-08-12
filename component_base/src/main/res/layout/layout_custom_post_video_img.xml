@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+
+  <RelativeLayout
+      android:id="@+id/post_img_layout"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      >
+    <!--    <ImageView
+            android:id="@+id/post_img"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:scaleType="centerCrop"  />-->
+
+    <ImageView
+        android:id="@+id/post_img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:scaleType="centerCrop"
+        />
+
+    <ImageView
+        android:id="@+id/post_img_play_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/video_play_icon"
+        />
+  </RelativeLayout>
+  <Button
+      android:id="@+id/img_del"
+      android:layout_width="30dp"
+      android:layout_height="30dp"
+      android:layout_alignParentRight="true"
+      android:layout_marginRight="15dp"
+      android:layout_marginTop="15dp"
+      android:background="@drawable/cover_del"
+      />
+
+  <EditText
+      android:id="@+id/describe_edit"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/post_img_layout"
+      android:ellipsize="end"
+      android:imeOptions="actionNext"
+      android:lineSpacingExtra="1dp"
+      android:lineSpacingMultiplier="1"
+      android:maxLength="30"
+      android:maxLines="1"
+      android:nextFocusForward="@+id/describe_next_edit"
+      android:paddingBottom="@dimen/dp_10"
+      android:paddingTop="@dimen/dp_10"
+      android:singleLine="true"
+      android:textColor="@color/col_777777"
+      android:textSize="@dimen/s_15"
+      android:visibility="gone"
+      />
+
+  <EditText
+      android:id="@+id/describe_next_edit"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/describe_edit"
+      android:layout_marginBottom="@dimen/d_5"
+      android:layout_marginTop="@dimen/d_5"
+      android:background="@color/transparent"
+      android:focusable="true"
+      android:focusableInTouchMode="true"
+      android:lineSpacingExtra="1dp"
+      android:lineSpacingMultiplier="1"
+      android:paddingBottom="@dimen/d_5"
+      android:paddingTop="@dimen/d_5"
+      android:textColor="@color/col_555555"
+      android:textSize="@dimen/s_15"
+      />
+</RelativeLayout>

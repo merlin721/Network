@@ -1,0 +1,8 @@
+include ':app',
+        ':component_base',
+        ':android-networking',
+        ':rx2-android-networking',
+        ':network-request-log',
+        ':network-request-log-no-op',
+        ':library_dialog',
+        ':network'

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:background="@color/color_white"
+    android:orientation="vertical"
+    >
+
+<com.merlin.time.view.TimeTextView
+      android:layout_width="wrap_content"
+      android:layout_height="60dp"
+      android:gravity="center_vertical"
+      android:text="@string/my_center_sure_logout"
+      android:textColor="@color/color_999999"
+      android:textSize="@dimen/s_14"
+      />
+  <View
+      android:layout_width="match_parent"
+      android:layout_height="1px"
+      android:background="#e5e5e5"
+      />
+  <com.merlin.time.view.TimeTextView
+      android:id="@+id/logout_dialog_logout_tv"
+      android:layout_width="match_parent"
+      android:layout_height="60dp"
+      android:gravity="center"
+      android:text="@string/my_center_logout"
+      android:textColor="@color/color_red"
+      android:textSize="@dimen/s_16"
+      />
+  <View
+      android:layout_width="match_parent"
+      android:layout_height="1px"
+      android:background="#e5e5e5"
+      />
+  <com.merlin.time.view.TimeTextView
+      android:id="@+id/logout_dialog_logout_cancel_tv"
+      android:layout_width="match_parent"
+      android:layout_height="60dp"
+      android:gravity="center"
+      android:text="@string/my_center_logout_cancel"
+      android:textColor="@color/col_333333"
+      android:textSize="@dimen/s_16"
+      />
+</LinearLayout>

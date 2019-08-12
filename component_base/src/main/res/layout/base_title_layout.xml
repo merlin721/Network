@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/title_root_view"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    >
+
+  <TextView
+      android:id="@+id/tvLeftTitle"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentLeft="true"
+      android:layout_alignParentStart="true"
+      android:layout_centerVertical="true"
+      android:textColor="@android:color/black"
+      />
+
+  <TextView
+      android:id="@+id/tvMiddleTitle"
+      android:layout_width="wrap_content"
+      android:layout_height="match_parent"
+      android:layout_centerInParent="true"
+      android:layout_centerVertical="true"
+      android:layout_gravity="center"
+      android:ellipsize="end"
+      android:gravity="center"
+      android:maxLines="1"
+      android:maxWidth="@dimen/d_220"
+      android:textColor="@android:color/black"
+      />
+
+  <com.soyoung.component_base.widget.CustomTextView
+      android:id="@+id/tvRightTitle"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentRight="true"
+      android:layout_centerVertical="true"
+      android:layout_marginRight="6dp"
+      android:padding="@dimen/d_10"
+      android:gravity="center"
+      android:textColor="@android:color/black"
+      android:visibility="visible"
+      />
+
+  <View
+      android:id="@+id/title_line"
+      android:layout_width="match_parent"
+      android:layout_height="0.5dp"
+      android:layout_alignParentBottom="true"
+      android:background="#dedede"
+      android:visibility="gone"
+      />
+</RelativeLayout>

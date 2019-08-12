@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <color name="colorPrimary">#008577</color>
+  <color name="colorPrimaryDark">#00574B</color>
+  <color name="colorAccent">#D81B60</color>
+
+
+  <color name="color_text_color">#333333</color>
+  <color name="color_hint_color">#666666</color>
+  <color name="color_white">#ffffff</color>
+  <color name="color_999999">#999999</color>
+  <color name="color_blue">#407AF2</color>
+  <color name="color_red">#FA233E</color>
+  <color name="feedback_top_right">#5A66FF</color>
+  <color name="colorGray">#A8A8A8</color>
+  <color name="colorWhite">#FFFFFF</color>
+  <color name="black">#000000</color>
+  <color name="common_bg">#e5e5e5</color>
+
+  <color name="black_overlay">#66000000</color>
+  <color name="chuck_colorPrimary">#00BCD4</color>
+  <color name="chuck_colorPrimaryDark">#0097A7</color>
+  <color name="chuck_colorAccent">#FF9800</color>
+  <color name="color_cccccc">#CCCCCC</color>
+
+  <color name="chuck_status_default">#212121</color>
+  <color name="chuck_status_requested">#9E9E9E</color>
+  <color name="chuck_status_error">#F44336</color>
+  <color name="chuck_status_500">#B71C1C</color>
+  <color name="chuck_status_400">#FF9800</color>
+  <color name="chuck_status_300">#0D47A1</color>
+  <color name="chuck_status_200">#008000</color>
+  <color name="chuck_status_f3f4f5">#F3F4F5</color>
+  <color name="chuck_status_E7F8E6">#E7F8E6</color>
+  <color name="color_4caf50">#4CAF50</color>
+</resources>

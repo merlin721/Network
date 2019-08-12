@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/title_rl"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <ImageView
+            android:id="@+id/gallery_list_title_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/d_20"
+            android:src="@drawable/nav_ic_back" />
+
+        <com.merlin.time.view.TimeTextView
+            android:id="@+id/gallery_list_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="@dimen/s_18" />
+
+        <ImageView
+            android:id="@+id/gallery_list_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/d_20"
+            android:visibility="gone"
+            android:src="@drawable/nav_ic_more" />
+
+    </RelativeLayout>
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/share_refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title_rl"
+        app:srlDisableContentWhenRefresh="true"
+        app:srlEnableFooterFollowWhenLoadFinished="true"
+        app:srlEnableHeaderTranslationContent="true"
+        app:srlEnableLoadMore="true"
+        app:srlEnableRefresh="true">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/gallery_list_recycle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/title_rl" />
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+    <RelativeLayout
+        android:id="@+id/gal_progress_rl"
+        android:layout_width="200dp"
+        android:layout_height="@dimen/d_40"
+        android:layout_below="@id/title_rl"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/d_20"
+        android:background="@drawable/commit_btn_bg">
+
+        <com.merlin.time.view.TimeTextView
+            android:id="@+id/gal_progress_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/s_16" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="120dp"
+        android:layout_height="@dimen/d_50"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:layout_marginStart="@dimen/d_24"
+        android:layout_marginEnd="@dimen/d_24"
+        android:layout_marginBottom="@dimen/d_40"
+        android:background="@drawable/commit_btn_bg">
+
+        <com.merlin.time.view.TimeTextView
+            android:id="@+id/gallery_list_upload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/upload"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/s_16" />
+    </RelativeLayout>
+</RelativeLayout>

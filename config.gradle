@@ -1,0 +1,51 @@
+ext {
+
+    /*友盟key*/
+    UM_DEBUG_KEY = "\"5bf0b2c3f1f556ed6b00104a\""
+    UM_KEY = "\"5bf0b2c3f1f556ed6b00104a\""
+    android = [
+            compileSdkVersion  : 28
+            , buildToolsVersion: '28.0.3'
+            , minSdkVersion    : 19
+            , targetSdkVersion : 28
+            , versionCode      : 1
+            , versionName      : "1.0.0"
+            , applicationId    : "com.merlin.time"
+            , supportVersion   : "28.0.2"
+    ]
+    dependencies = [
+            appcompat_v7            : 'com.android.support:appcompat-v7:28.0.0',
+            recyclerview            : 'com.android.support:recyclerview-v7:27.1.1',
+            design                  : 'com.android.support:design:27.1.1',
+            cardview                : 'com.android.support:cardview-v7:27.1.1',
+            constraint_layout       : 'com.android.support.constraint:constraint-layout:1.1.2',
+            annotations             : 'com.android.support:support-annotations:27.1.1',
+            core_utils              : 'com.android.support:support-core-utils:27.1.1',
+            //v4包
+            appcompat_v4            : 'com.android.support:support-v4:27.1.1',
+
+            "rxjava"                : "io.reactivex.rxjava2:rxjava:2.2.2",
+            "rxandroid"             : "io.reactivex.rxjava2:rxandroid:2.0.1",
+            "rxbinding2"            : "com.jakewharton.rxbinding2:rxbinding:2.0.0",
+            "rxbinding-support-v4"  : 'com.jakewharton.rxbinding2:rxbinding-support-v4:2.0.0',
+            "rxbinding-appcompat-v7": 'com.jakewharton.rxbinding2:rxbinding-appcompat-v7:2.0.0',
+            "rxpermissi"            : 'com.tbruyelle.rxpermissions2:rxpermissions:0.9.4@aar',
+
+            "glide"                 : "com.github.bumptech.glide:glide:4.8.0",
+            "glide_okhttp3"         : "com.github.bumptech.glide:okhttp3-integration:4.8.0",
+            "glide_compiler"        : "com.github.bumptech.glide:compiler:4.8.0",
+            "glide_transformations" : "jp.wasabeef:glide-transformations:3.3.0",
+
+
+            eventbus                : 'org.greenrobot:eventbus:3.1.1',
+            okhttp                  : 'com.squareup.okhttp3:okhttp:3.10.0',
+            gson                    : 'com.google.code.gson:gson:2.8.2',
+            "takephoto"             : 'com.github.crazycodeboy:TakePhoto:v4.1.0',
+            "mockwebserver"         : "com.squareup.okhttp3:mockwebserver:3.10.0",
+            "matisse"               : 'com.zhihu.android:matisse:0.5.2-beta4',
+            'pgyer'                 : 'com.pgyersdk:sdk:3.0.2',
+            'player'                : 'cn.jzvd:jiaozivideoplayer:6.4.1',
+            'aliyun'                : 'com.aliyun.dpa:oss-android-sdk:+',
+    ]
+
+}

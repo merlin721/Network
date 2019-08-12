@@ -1,0 +1,47 @@
+apply plugin: 'com.android.library'
+def andr = rootProject.ext.android
+android {
+    compileSdkVersion andr.compileSdkVersion
+    buildToolsVersion andr.buildToolsVersion
+    defaultConfig {
+        minSdkVersion andr.minSdkVersion
+        targetSdkVersion andr.targetSdkVersion
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug{
+
+        }
+        develop{
+
+        }
+    }
+    lintOptions {
+        abortOnError false
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+        encoding = "UTF-8"
+    }
+    lintOptions {
+        abortOnError false
+    }
+
+
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestImplementation('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    implementation 'io.mattcarroll.hover:hover:0.9.8'
+    compileOnly rootProject.ext.dependencies.eventbus
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.9.1'
+    implementation rootProject.ext.dependencies.gson
+    implementation rootProject.ext.dependencies.okhttp
+}

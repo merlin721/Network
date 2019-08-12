@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+    <include layout="@layout/status_bar" />
+    <com.soyoung.component_base.widget.CustomTitleBar
+        android:id="@+id/title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="true"
+        app:middleTextColor="@color/col_333333"
+        app:middleTextSize="18sp"
+        app:rightTextColor="@color/col_333333"
+        app:rightTextSize="@dimen/s_14" />
+</LinearLayout>

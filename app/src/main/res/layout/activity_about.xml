@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white"
+    >
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="60dp"
+      android:background="@color/color_white"
+      >
+    <ImageView
+        android:id="@+id/about_back_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:padding="@dimen/d_20"
+        android:src="@drawable/nav_ic_back"
+        />
+
+    <com.merlin.time.view.TimeTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="关于我们"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/s_16"
+        />
+
+  </RelativeLayout>
+  <ImageView
+      android:id="@+id/about_img"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_centerHorizontal="true"
+      android:layout_marginTop="120dp"
+      android:src="@drawable/img_logo_gray"
+      />
+  <com.merlin.time.view.TimeTextView
+      android:id="@+id/about_text"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/about_img"
+      android:layout_centerHorizontal="true"
+      android:layout_marginTop="@dimen/d_30"
+      android:text="@string/app_name"
+      android:textColor="@color/color_text_color"
+      android:textSize="@dimen/s_28"
+      />
+  <com.merlin.time.view.TimeTextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/about_text"
+      android:layout_centerHorizontal="true"
+      android:layout_marginTop="@dimen/d_5"
+      android:text="与爱的人分享生活照片"
+      android:textColor="@color/color_hint_color"
+      android:textSize="@dimen/s_14"
+      />
+</RelativeLayout>

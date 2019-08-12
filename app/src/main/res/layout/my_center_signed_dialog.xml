@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:orientation="vertical"
+    >
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="@android:color/white"
+      android:orientation="vertical"
+      >
+    <com.merlin.time.view.TimeTextView
+        android:id="@+id/my_center_ask_top_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/d_58"
+        android:text="你今天已经签到过了~"
+        android:textColor="#28BE1E"
+        android:textSize="@dimen/s_24"
+        />
+
+
+    <com.merlin.time.view.TimeTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/d_50"
+        android:gravity="center_horizontal"
+        android:text="邀请好友注册可获得空间哦"
+        android:textColor="@color/color_text_color"
+        android:textSize="24sp"
+        />
+
+    <RelativeLayout
+        android:id="@+id/signed_go_ask"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/d_20"
+        android:layout_marginBottom="@dimen/d_50"
+
+        android:background="@drawable/commit_btn_bg"
+        >
+      <com.merlin.time.view.TimeTextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_centerInParent="true"
+          android:text="去邀请"
+          android:textColor="@color/color_white"
+          android:textSize="16sp"
+          />
+
+    </RelativeLayout>
+
+  </LinearLayout>
+  <ImageView
+      android:id="@+id/my_center_close_img"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center_horizontal"
+      android:layout_marginTop="@dimen/d_20"
+      android:src="@drawable/pop_ic_close"
+      />
+</LinearLayout>

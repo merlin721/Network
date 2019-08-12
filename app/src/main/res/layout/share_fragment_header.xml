@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+  <com.merlin.time.view.TimeTextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="每个相册仅相册里的成员可见\n保护你的照片隐私"
+      android:gravity="start"
+      android:layout_marginTop="@dimen/d_20"
+      android:layout_marginStart="@dimen/d_16"
+      android:textColor="@color/color_999999"
+      android:textSize="@dimen/s_12"
+      android:textStyle="bold"
+      />
+
+  <RelativeLayout
+      android:id="@+id/share_gal_add_img_rl"
+      android:layout_width="71dp"
+      android:layout_height="@dimen/d_30"
+      android:layout_alignParentEnd="true"
+      android:layout_marginEnd="@dimen/d_16"
+      android:layout_marginTop="@dimen/d_20"
+      android:background="@drawable/corner_gray"
+      >
+
+    <com.merlin.time.view.TimeTextView
+        android:id="@+id/share_gal_add_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="+ 分组"
+        android:textColor="#5A66FF"
+        android:textSize="@dimen/s_12"
+        android:textStyle="bold"
+        />
+  </RelativeLayout>
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_below="@+id/share_gal_add_img_rl"
+      android:visibility="gone"
+      >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_marginEnd="@dimen/d_24"
+        android:layout_marginStart="@dimen/d_24"
+        android:background="@color/color_blue"
+        />
+    <com.merlin.time.view.TimeTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:text="其实我是一个广告"
+        android:textColor="@color/color_white"
+        android:textSize="@dimen/d_20"
+        />
+  </RelativeLayout>
+</RelativeLayout>

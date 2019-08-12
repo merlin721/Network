@@ -1,0 +1,76 @@
+apply plugin: 'com.android.application'
+def comAndroid = rootProject.ext.android
+def dep = rootProject.ext.dependencies
+
+android {
+  compileSdkVersion comAndroid.compileSdkVersion
+  buildToolsVersion comAndroid.buildToolsVersion
+  defaultConfig {
+    applicationId comAndroid.applicationId
+    minSdkVersion comAndroid.minSdkVersion
+    targetSdkVersion comAndroid.targetSdkVersion
+    versionCode comAndroid.versionCode
+    versionName comAndroid.versionName
+    testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    multiDexEnabled true
+  }
+  signingConfigs {
+    release {
+      keyAlias 'timekey'
+      keyPassword 'sharetime'
+      storeFile file('./time.key')
+      storePassword 'sharetime'
+      v1SigningEnabled true
+      v2SigningEnabled true
+    }
+
+    debug {
+      keyAlias 'timekey'
+      keyPassword 'sharetime'
+      storeFile file('./time.key')
+      storePassword 'sharetime'
+    }
+  }
+  buildTypes {
+    release {
+      buildConfigField 'String', 'UMENG_KEY', rootProject.ext.UM_KEY //友盟key
+      signingConfig signingConfigs.release //签名
+      minifyEnabled true
+      shrinkResources true
+      zipAlignEnabled true
+      proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+    }
+    debug {
+      buildConfigField 'String', 'UMENG_KEY', rootProject.ext.UM_DEBUG_KEY //友盟key
+      signingConfig signingConfigs.debug //签名
+    }
+  }
+
+  compileOptions {
+    sourceCompatibility JavaVersion.VERSION_1_8
+    targetCompatibility JavaVersion.VERSION_1_8
+    encoding = "UTF-8"
+  }
+  lintOptions {
+    abortOnError false
+  }
+
+}
+
+dependencies {
+  implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+  implementation 'junit:junit:4.12'
+  androidTestImplementation 'com.android.support.test:runner:1.0.2'
+  androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+
+
+  /*各种状态页面统一处理*/
+  api(name: 'library_loadsir', ext: 'aar')
+  implementation project(path: ':component_base')
+  implementation('com.alimuzaffar.lib:pinentryedittext:1.3.10')
+  implementation project(path: ':network')
+  implementation 'com.tbruyelle.rxpermissions2:rxpermissions:0.9.5@aar'
+  implementation 'com.github.chrisbanes:PhotoView:2.1.3'
+  implementation 'com.tencent.mm.opensdk:wechat-sdk-android-with-mta:+'
+}

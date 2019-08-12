@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CustomTitleBar">
+        <attr format="string" name="leftTitle"/>
+        <attr format="string" name="middleTitle"/>
+        <attr format="string" name="rightTitle"/>
+
+        <attr format="dimension" name="leftTextSize"/>
+        <attr format="dimension" name="middleTextSize"/>
+        <attr format="dimension" name="rightTextSize"/>
+
+        <attr format="color" name="leftTextColor"/>
+        <attr format="color" name="middleTextColor"/>
+        <attr format="color" name="rightTextColor"/>
+
+        <attr format="integer" name="leftImage"/>
+        <attr format="integer" name="rightImage"/>
+        <attr format="integer" name="rightImage2"/>
+    </declare-styleable>
+    <style name="gif_dialog"
+        parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:backgroundDimAmount">0</item>
+    </style>
+
+  <declare-styleable name="FlowLayout">
+    <attr format="dimension" name="horizontalSpacing"/>
+    <attr format="dimension" name="verticalSpacing"/>
+    <attr format="boolean" name="singleLine"/>
+    <attr format="boolean" name="twoLine"/>
+    <attr format="enum" name="flowLayout_orientation">
+      <enum name="horizontal" value="0"/>
+      <enum name="vertical" value="1"/>
+    </attr>
+    <attr format="boolean" name="debugDraw"/>
+  </declare-styleable>
+  <declare-styleable name="FlowLayout_LayoutParams">
+    <attr format="boolean" name="layout_newLine"/>
+    <attr format="dimension" name="layout_horizontalSpacing"/>
+    <attr format="dimension" name="layout_verticalSpacing"/>
+  </declare-styleable>
+
+  <attr format="reference" name="SwipeBackLayoutStyle"/>
+  <declare-styleable name="SwipeBackLayout">
+    <attr format="dimension" name="edge_size"/>
+    <attr name="edge_flag">
+      <enum name="left" value="0"/>
+      <enum name="right" value="1"/>
+      <enum name="bottom" value="2"/>
+      <enum name="all" value="3"/>
+    </attr>
+    <attr format="reference" name="shadow_left"/>
+    <attr format="reference" name="shadow_right"/>
+    <attr format="reference" name="shadow_bottom"/>
+  </declare-styleable>
+</resources>

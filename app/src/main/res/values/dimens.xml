@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <dimen name="d_20">20dp</dimen>
+  <dimen name="d_36">36dp</dimen>
+
+  <dimen name="s_20">20sp</dimen>
+  <dimen name="grid_expected_size">120dp</dimen>
+  <dimen name="margin_height">10dp</dimen>
+</resources>

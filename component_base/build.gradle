@@ -1,0 +1,83 @@
+apply plugin: 'com.android.library'
+def deps = rootProject.ext.dependencies
+def andr = rootProject.ext.android
+android {
+    compileSdkVersion andr.compileSdkVersion
+    defaultConfig {
+        minSdkVersion andr.minSdkVersion
+        targetSdkVersion andr.targetSdkVersion
+    }
+
+    buildTypes {
+        release {
+            buildConfigField 'String', 'BASE_URL', "\"http://time.taowangzhan.com\""
+            buildConfigField 'boolean', 'IS_DEBUG', 'false'
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        develop{
+            buildConfigField 'String', 'BASE_URL', "\"http://time.taowangzhan.com\""
+            buildConfigField 'boolean', 'IS_DEBUG', 'true'
+        }
+        debug {
+            buildConfigField 'String', 'BASE_URL', "\"http://time.taowangzhan.com\""
+            buildConfigField 'boolean', 'IS_DEBUG', 'true'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+        encoding = "UTF-8"
+    }
+    lintOptions {
+        abortOnError false
+    }
+
+}
+
+dependencies {
+    api fileTree(include: ['*.jar'], dir: 'libs')
+    api deps.design
+    api deps.cardview
+    api deps.appcompat_v7
+    api deps.constraint_layout
+    api deps.annotations
+    /*友盟统计*/
+    api files('libs/umeng-analytics-7.5.3.jar')
+    api files('libs/umeng-common-1.5.3.jar')
+
+
+    /*状态栏处理*/
+    api files('libs/status_bar-2.3.2.jar')
+    /*事件总线程*/
+    api files('libs/eventbus-3.1.1.jarr')
+    /*各种状态页面统一处理*/
+    api(name: 'library_loadsir', ext: 'aar')
+    /*统一封装的adapter*/
+    api(name: 'library_adapter', ext: 'aar')
+    /*下拉刷新和上拉加载更多*/
+    api(name: 'library_refresh', ext: 'aar')
+    /*网络请求*/
+    api project(path: ':rx2-android-networking')
+
+    /*悬浮窗*/
+    releaseApi project(path: ':network-request-log-no-op')
+    debugApi project(path: ':network-request-log')
+    developApi project(path: ':network-request-log')
+    /*tivtiy 侧滑关闭*/
+    //api deps["swipe"]
+    /*Rx系列*/
+    api deps["rxbinding2"]
+    api deps["rxbinding-support-v4"]
+    api deps["rxbinding-appcompat-v7"]
+    /*图片加载*/
+    api deps["glide"]
+    api deps["glide_okhttp3"]
+    api deps["glide_transformations"]
+    annotationProcessor deps["glide_compiler"]
+    api project(path: ':library_dialog')
+    api deps["matisse"]
+    api deps.pgyer
+    api deps.player
+    api deps.aliyun
+}

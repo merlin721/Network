@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <com.merlin.time.view.TimeTextView
+        android:id="@+id/home_child_common_item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/d_20"
+        android:layout_marginStart="@dimen/d_16"
+        android:text="爱笑的猫 :"
+        android:gravity="center_vertical"
+        android:textColor="@color/color_text_color"
+        android:textSize="@dimen/s_12" />
+
+    <com.merlin.time.view.TimeTextView
+        android:id="@+id/home_child_common_item_content"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d_20"
+        android:gravity="center_vertical"
+        android:layout_marginEnd="@dimen/d_16"
+        android:text="过来炒麻将！"
+        android:textColor="@color/color_999999"
+        android:textSize="@dimen/s_12" />
+</LinearLayout>

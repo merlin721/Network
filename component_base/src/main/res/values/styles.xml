@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--有进出动画 背景透明-->
+    <style name="AppDefaultTheme" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowAnimationStyle">@style/ActivityAnimation</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowActionBarOverlay">true</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="ActivityAnimation" parent="@android:style/Animation">
+        <item name="android:activityOpenEnterAnimation">@anim/slide_in_right</item>
+        <item name="android:activityOpenExitAnimation">@anim/slide_out_left</item>
+        <item name="android:activityCloseExitAnimation">@anim/slide_out_right</item>
+        <item name="android:activityCloseEnterAnimation">@anim/slide_in_left</item>
+    </style>
+    <style name="customDatePickerDialog" parent="@style/AppDefaultTheme">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+    <style name="SwipeBackLayout">
+        <item name="edge_size">50dip</item>
+        <item name="shadow_left">@drawable/shadow_left</item>
+        <item name="shadow_right">@drawable/shadow_right</item>
+        <item name="shadow_bottom">@drawable/shadow_bottom</item>
+    </style>
+
+    <declare-styleable name="CommonTabLayout">
+        <!-- indicator -->
+        <attr format="color" name="tl_indicator_color"/>
+        <attr format="dimension" name="tl_indicator_height"/>
+        <attr format="dimension" name="tl_indicator_width"/>
+        <attr format="dimension" name="tl_indicator_margin_left"/>
+        <attr format="dimension" name="tl_indicator_margin_top"/>
+        <attr format="dimension" name="tl_indicator_margin_right"/>
+        <attr format="dimension" name="tl_indicator_margin_bottom"/>
+        <attr format="dimension" name="tl_indicator_corner_radius"/>
+        <attr format="integer" name="tl_indicator_gravity"/>
+        <attr format="integer" name="tl_indicator_style"/>
+        <attr format="boolean" name="tl_indicator_anim_enable"/>
+        <attr format="boolean" name="tl_indicator_select_bold_enable"/>
+        <attr format="boolean" name="tl_text_select_bold_enable"/>
+        <attr format="integer" name="tl_indicator_anim_duration"/>
+        <attr format="boolean" name="tl_indicator_bounce_enable"/>
+        <attr format="boolean" name="tl_common_indicator_text_bottom"/>
+
+        <!-- underline -->
+        <attr name="tl_underline_color"/>
+        <attr name="tl_underline_height"/>
+        <attr format="integer" name="tl_underline_gravity"/>
+
+        <!-- divider -->
+        <attr format="color" name="tl_divider_color"/>
+        <attr format="dimension" name="tl_divider_width"/>
+        <attr format="dimension" name="tl_divider_padding"/>
+
+        <!-- tab -->
+        <attr format="dimension" name="tl_tab_padding"/>
+        <attr format="boolean" name="tl_tab_space_equal"/>
+        <attr format="dimension" name="tl_tab_width"/>
+
+        <!-- title -->
+        <attr name="tl_textsize"/>
+        <attr name="tl_textSelectsize"/>
+        <attr name="tl_textSelectColor"/>
+        <attr name="tl_textUnselectColor"/>
+        <attr format="boolean" name="tl_textBold"/>
+        <attr format="boolean" name="tl_textAllCaps"/>
+        <attr format="integer" name="tl_common_bold"/>
+        <!-- icon -->
+        <!-- 设置icon宽度 -->
+        <attr format="dimension" name="tl_iconWidth"/>
+        <!-- 设置icon高度 -->
+        <attr format="dimension" name="tl_iconHeight"/>
+        <!-- 设置icon是否可见 -->
+        <attr format="boolean" name="tl_iconVisible"/>
+        <!-- 设置icon显示位置,对应Gravity中常量值 -->
+        <attr format="enum" name="tl_iconGravity">
+            <enum name="LEFT" value="3"/>
+            <enum name="TOP" value="48"/>
+            <enum name="RIGHT" value="5"/>
+            <enum name="BOTTOM" value="80"/>
+        </attr>
+        <!-- 设置icon与文字间距 -->
+        <attr format="dimension" name="tl_iconMargin"/>
+
+        <!-- 设置icon宽度 -->
+        <attr format="boolean" name="tl_is_width_match"/>
+    </declare-styleable>
+
+    <declare-styleable name="MsgView">
+        <!-- 圆角矩形背景色 -->
+        <attr format="color" name="mv_backgroundColor"/>
+        <!-- 圆角弧度,单位dp-->
+        <attr format="dimension" name="mv_cornerRadius"/>
+        <!-- 圆角弧度,单位dp-->
+        <attr format="dimension" name="mv_strokeWidth"/>
+        <!-- 圆角边框颜色-->
+        <attr format="color" name="mv_strokeColor"/>
+        <!-- 圆角弧度是高度一半-->
+        <attr format="boolean" name="mv_isRadiusHalfHeight"/>
+        <!-- 圆角矩形宽高相等,取较宽高中大值-->
+        <attr format="boolean" name="mv_isWidthHeightEqual"/>
+    </declare-styleable>
+
+    <declare-styleable name="SlidingTabLayout">
+        <!-- indicator -->
+        <attr name="tl_indicator_color"/>
+        <attr name="tl_indicator_height"/>
+        <attr name="tl_indicator_width"/>
+        <attr name="tl_indicator_margin_left"/>
+        <attr name="tl_indicator_margin_top"/>
+        <attr name="tl_indicator_margin_right"/>
+        <attr name="tl_indicator_margin_bottom"/>
+        <attr name="tl_indicator_corner_radius"/>
+        <attr name="tl_indicator_gravity"/>
+        <attr name="tl_indicator_style"/>
+        <attr format="boolean" name="tl_indicator_width_equal_title"/>
+        <attr format="boolean" name="tl_indicator_text_bottom"/>
+
+        <!-- underline -->
+        <attr format="color" name="tl_underline_color"/>
+        <attr format="dimension" name="tl_underline_height"/>
+        <attr name="tl_underline_gravity"/>
+
+        <!-- divider -->
+        <attr name="tl_divider_color"/>
+        <attr name="tl_divider_width"/>
+        <attr name="tl_divider_padding"/>
+
+        <!-- tab -->
+        <attr name="tl_tab_padding"/>
+        <attr name="tl_tab_space_equal"/>
+        <attr name="tl_tab_width"/>
+
+        <!-- title -->
+        <attr format="dimension" name="tl_textsize"/>
+        <attr format="dimension" name="tl_textSelectsize"/>
+        <attr format="color" name="tl_textSelectColor"/>
+        <attr format="color" name="tl_textUnselectColor"/>
+        <attr name="tl_textBold"/>
+        <attr name="tl_textAllCaps"/>
+    </declare-styleable>
+</resources>

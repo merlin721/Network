@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">component_base</string>
+    <string name="refresh">刷新</string>
+    <string name="error_load_faile">加载失败，请刷新重新</string>
+    <string name="error_faile_reload">重新加载</string>
+    <string name="some_error">Some Error Occurred!</string>
+    <string name="api_default_error">网络请求失败</string>
+    <string name="connection_error">网络请求失败</string>
+    <string name="api_retry_error">点击页面刷新重试</string>
+    <string name="ssl_error">访问失败！请升级最新版本</string>
+    <string name="network_is_not_connected">您的网络已断开！</string>
+    <string name="common_no_net">网络不给力哦</string>
+    <string name="loading">加载中···</string>
+
+    <string name="permission_calendar">日历</string>
+    <string name="permission_camera">相机</string>
+    <string name="permission_contacts">通讯录</string>
+    <string name="permission_location">位置信息</string>
+    <string name="permission_microphone">麦克风</string>
+    <string name="permission_phone">设备信息</string>
+    <string name="permission_sensors">身体传感器</string>
+    <string name="permission_sms">短信</string>
+    <string name="permission_storage">存储空间权限</string>
+
+  <!--######回答###### start-->
+  <string name="answer_text_hint">请填写回答内容</string>
+  <string name="photo_album">相册</string>
+  <string name="video_text">视频</string>
+  <string name="speech_time_tips">每段语音录制最多60秒</string>
+  <string name="speech_tips_text">点击开始实时录入文字</string>
+  <string name="delete_text_img">真的要删除这张美照吗？</string>
+  <string name="delete_text_video">真的要删除这个视频吗？</string>
+  <string name="delete_post_cancle">不，刚才手抖了</string>
+  <string name="delete_post_ok">是哒</string>
+  <string name="speeching_get_text">正在识别中...</string>
+  <!--######回答###### end-->
+
+  <!-- 消息 -->
+  <string name="load_complete">已全部加载</string>
+  <string name="zizhi">资&#160;&#160;&#160;&#160;质</string>
+  <string name="jigou">机&#160;&#160;&#160;&#160;构</string>
+</resources>

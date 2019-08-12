@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+  <com.github.chrisbanes.photoview.PhotoView
+      android:id="@+id/gallery_detail_header_photo_view"
+      android:layout_width="match_parent"
+      android:scaleType="centerCrop"
+      android:layout_height="match_parent"
+      />
+  <cn.jzvd.JzvdStd
+      android:id="@+id/videoplayer"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"/>
+  <LinearLayout
+      android:id="@+id/gallery_detail_header_constrain"
+      android:layout_width="match_parent"
+      android:layout_height="100dp"
+      android:layout_alignParentBottom="true"
+      android:gravity="center_vertical"
+      android:orientation="horizontal"
+      >
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/d_24"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        >
+      <com.merlin.time.view.TimeTextView
+          android:id="@+id/gal_detail_header_time"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="2017.6.20 17:40 周六"
+          android:textColor="@color/black"
+          android:textSize="@dimen/s_16"
+          />
+      <com.merlin.time.view.TimeTextView
+          android:id="@+id/gal_detail_header_name"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="@dimen/d_5"
+          android:text="海南·三亚 亚龙湾丨阿苏·3天前上传"
+          android:textColor="@color/color_hint_color"
+          android:textSize="@dimen/s_12"
+          />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/gal_detail_header_del"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/d_8"
+        android:padding="@dimen/d_20"
+        android:src="@drawable/c_ic_delete"
+        />
+  </LinearLayout>
+  <android.support.v7.widget.RecyclerView
+      android:id="@+id/gallery_detail_header_recycler"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:visibility="gone"
+      android:layout_above="@+id/gallery_detail_header_constrain"
+      />
+
+
+</LinearLayout>

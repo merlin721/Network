@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="status_bar_height">0dp</dimen>
+
+    <!--Sp-->
+    <dimen name="s_10">10sp</dimen>
+    <dimen name="s_11">11sp</dimen>
+    <dimen name="s_12">12sp</dimen>
+    <dimen name="s_13">13sp</dimen>
+    <dimen name="s_14">14sp</dimen>
+    <dimen name="s_15">15sp</dimen>
+    <dimen name="s_16">16sp</dimen>
+    <dimen name="s_18">18sp</dimen>
+    <dimen name="s_20">20sp</dimen>
+    <dimen name="s_24">24sp</dimen>
+    <dimen name="s_25">25sp</dimen>
+    <dimen name="s_28">28sp</dimen>
+    <dimen name="s_32">32sp</dimen>
+
+    <dimen name="d_220">220dp</dimen>
+    <dimen name="d_74">74dp</dimen>
+    <dimen name="d_26">26dp</dimen>
+    <dimen name="d_33">33dp</dimen>
+    <dimen name="d_6">6dp</dimen>
+    <dimen name="d_15">15dp</dimen>
+    <dimen name="d_16">16dp</dimen>
+    <dimen name="d_5">5dp</dimen>
+    <dimen name="d_24">24dp</dimen>
+    <dimen name="d_28">28dp</dimen>
+    <dimen name="d_30">30dp</dimen>
+    <dimen name="d_40">40dp</dimen>
+    <dimen name="d_50">50dp</dimen>
+    <dimen name="d_10">10dp</dimen>
+    <dimen name="d_8">8dp</dimen>
+    <dimen name="d_12">12dp</dimen>
+    <dimen name="d_18">18dp</dimen>
+    <dimen name="d_58">58dp</dimen>
+</resources>

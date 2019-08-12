@@ -1,0 +1,58 @@
+<resources>
+  <string name="app_name">共享相册</string>
+  <string name="create_gallery">创建相册</string>
+  <string name="name">名字</string>
+  <string name="cancel">取消</string>
+  <string name="edit_name">姓名</string>
+  <string name="click_back">再按一次退出程序</string>
+  <string name="permission_request_denied">Permission request denied</string>
+  <string name="error_gif">x or y bound size should be at least %1$dpx and file size should be no more than %2$sM</string>
+
+
+  <string name="errcode_success">发送成功</string>
+  <string name="errcode_cancel">发送取消</string>
+  <string name="errcode_deny">发送被拒绝</string>
+  <string name="errcode_unsupported">不支持错误</string>
+  <string name="errcode_unknown">发送返回</string>
+
+  <string name="login_input_phone_num">输入手机号</string>
+  <string name="login_input_phone_num_hint">手机号</string>
+  <string name="login_input_code_num">输入验证码</string>
+  <string name="login_input_code_tips">已发送短信至 %1$s</string>
+  <string name="login_input_code_time">重新发送(%1$s)</string>
+  <string name="login_input_code_retry">重新发送</string>
+
+  <string name="mainpage">首页</string>
+  <string name="discover">颜习社</string>
+  <string name="my_gallery">我的相册</string>
+  <string name="share_gallery">群组相册</string>
+  <string name="save_msg">保存图片</string>
+
+  <string name="my_center">我</string>
+  <string name="my_center_sure_logout">确认退出登录？</string>
+  <string name="my_center_logout">退出登录</string>
+  <string name="my_center_logout_cancel">取 消</string>
+  <string name="my_center_feedback_hint">期待你的意见反馈</string>
+  <string name="personal_information">个人信息</string>
+  <string name="edit_name_edit_hint">请输入您的姓名</string>
+  <string name="edit_name_title">编辑姓名</string>
+  <string name="done">完成</string>
+  <string name="upload_pic_choose_from_pic">从手机相册选择</string>
+  <string name="upload_pic_take_photo">拍照</string>
+  <string name="share_gallery_scan">扫一扫</string>
+  <string name="share_gallery_ask_in">邀请码加入</string>
+  <string name="share_gallery_create_gallery">创建相册</string>
+  <string name="share_gallery_gallery_name">相册名称</string>
+
+
+  <string name="upload">上传照片</string>
+  <string name="create_gal">创建</string>
+
+  <string name="choose_loan_money">拍照</string>
+  <string name="share_qq_friend">QQ好友</string>
+  <string name="share_wechat_moment">朋友圈</string>
+  <string name="share_wechat_friend">微信好友</string>
+  <string name="save_photo_success">照片已保存</string>
+  <string name="center_dialog_update_pic">有新拍的照片吗？\n记得上传备份一下哦~</string>
+  <string name="space_detail">空间明细</string>
+</resources>
